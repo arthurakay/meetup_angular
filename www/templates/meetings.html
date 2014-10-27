@@ -1,0 +1,9 @@
+<ion-view title="Meetings">
+    <ion-content has-header="true" padding="false">
+        <ion-list>
+            <ion-item ng-repeat="meetup in meetings" type="item-text-wrap" href="#/meetings/{{meetup.id}}">
+                {{meetup.name}} <span class="meeting_time">{{meetup.time}}</span>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
